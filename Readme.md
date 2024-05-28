@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга Чулакова](https://up.htmlacademy.ru/htmlcss/40/user/2530959).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
