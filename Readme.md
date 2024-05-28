@@ -2,7 +2,7 @@
 
 * Студент: [Ольга Чулакова](https://up.htmlacademy.ru/htmlcss/40/user/2530959).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-
+* Сайт [Мой проект Седона](https://olga-chulakova.github.io/2530959-sedona-40/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
