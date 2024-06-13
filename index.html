@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона. Городок в Аризоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -36,7 +37,7 @@
             </a>
           </li>
         </ul>
-        <a class="navigation-button" href="#">Хочу сюда!</a>
+            <a class="navigation-user-link button-navigation" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main class="main-index">
@@ -48,11 +49,12 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="advantages-tagline">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="block-advanteges">
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <h3 class="advantages-title white-item">Настоящий городок</h3>
+            <p class="advantages-description white-item">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantages-img" src="images/content/street-sedona.jpg" width="800" height="385" alt="Дома города Седона">
           </li>
           <li class="advantages-item">
@@ -68,16 +70,18 @@
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="advantages-title white-item">Там есть мост дьявола</h3>
+            <p class="advantages-description white-item">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img class="advantages-img" src="images/content/bridge-devil's.jpg" width="800" height="385" alt="Каньоны и горы">
           </li>
         </ul>
+      </div>
       </section>
       <section class="infrastructure">
         <h2 class="visually-hidden">Инфраструктура</h2>
         <p class="infrastructure-tagline">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-        <p>Опытный персонал и качественное обслуживание!</p>
+        <p class="infrastructure-text">Опытный персонал и качественное обслуживание!</p>
+        <div class="block-infrastructure">
         <ul class="infrastructure-list">
           <li class="infrastructure-item">
             <h3 class="infrastructure-title">Жильё</h3>
@@ -93,12 +97,15 @@
             <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
+      </div>
       </section>
       <section class="search">
+        <div class="block-search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в Седоне</p>
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
+      </div>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -136,7 +143,9 @@
       <h2 class="visually-hidden">Номер телефона</h2>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </section>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="logo-geveloper" src="images/content/logo-htmlacademy.svg" width="115" height="34" alt="Логотип разработчика сайта">
+      </a>
     </footer>
   </body>
 
