@@ -222,7 +222,7 @@ background-color: #ffffff;
   height: 52px;
 }
 
-.subscribe {
+.block-subscribe {
   background-color: #a0c0d6;
   background-image: url("../images/background/subscribe-background.jpg");
   background-size: 100% auto;
@@ -246,7 +246,13 @@ background-color: #ffffff;
   color: #ffffff;
 }
 
+.subscribe-form{
+  text-align: center;
+  border: none;
+}
+
 .subscribe-button {
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -258,15 +264,13 @@ background-color: #ffffff;
   padding: 8px 50px;
   width: 232px;
   height: 52px;
+  border: none;
 }
 
-/*.field  {
-  border-radius: 4px 0 0 4px;
-  padding: 12px 20px;
+.field  {
   width: 452px;
   height: 52px;
 }
-*/
 
 .page-footer {
   color: #000000;
@@ -283,6 +287,7 @@ background-color: #ffffff;
   text-decoration-line: none;
 }
 
+/*Стилизация Каталога*/
 .general-block {
   background-color: #8eb6ce;
   background-image: url("../images/background/filter-background.jpg");
@@ -326,14 +331,8 @@ background-color: #ffffff;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: right;
   color: #000000;
-  background-color: #F2F2F2;
-  border-radius: 4px 0 0 4px;
-  padding: 12px 20px;
-  width: 143px;
-  height: 48px;
 }
 
 .button-show {
@@ -344,6 +343,7 @@ background-color: #ffffff;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
+  border: none;
 }
 
 .button-reset {
@@ -353,7 +353,8 @@ background-color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: none;
+  background-color: transparent;
+  border: none;
 }
 
 .catalog-products-title {
@@ -370,6 +371,14 @@ background-color: #ffffff;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+}
+
+.product-card {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  text-decoration: none;
 }
 
 .product-card-title {
@@ -394,6 +403,7 @@ background-color: #ffffff;
 }
 
 .product-card-detail-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -402,9 +412,14 @@ background-color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
 }
 
 .product-card-favorit-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -413,9 +428,14 @@ background-color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
 }
 
 .product-card-favorit-button-add {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -424,9 +444,14 @@ background-color: #ffffff;
   background-color: #7DB54F;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
 }
 
 .product-card-rating {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -435,6 +460,9 @@ background-color: #ffffff;
   background-color: #F2F2F2;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
+  width: 140px;
+  height: 37px;
 }
 
 .pagination-link {
@@ -455,4 +483,20 @@ background-color: #ffffff;
   color: #000000;
   background-color: #F2F2F2;
   text-decoration: none;
+}
+.subscribe-title-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.subscribe-description-catalog {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
 }
