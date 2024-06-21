@@ -41,14 +41,12 @@ body {
 }
 
 .navigation {
-display: flex;
-width: 1200px;
-margin: 0 auto;
+  display: flex;
+  padding: 0 70px;
 }
 
 .navigation-logo {
   width: 140px;
-  margin-left: 70px;
   margin-right: 30px;
 }
 
@@ -63,7 +61,6 @@ margin: 0 auto;
   margin: 0;
   padding: 0;
   margin-left: auto;
-  margin-right: 70px;
   }
 
 .navigation-link {
@@ -105,7 +102,6 @@ margin: 0 auto;
   color: #ffffff;
   background-color: #756157;
   text-decoration-line: none;
-
 }
 
 .main-container {
@@ -142,7 +138,7 @@ margin: 0 auto;
 
 .advantages-wrapper {
   width: 660px;
-  margin: 69px auto;
+  padding: 70px 270px;
 }
 
 .advantages-text {
@@ -151,7 +147,6 @@ margin: 0 auto;
   font-weight: 400;
   text-align: center;
   color: #333333;
-  background-color: #ffffff;
 }
 
 .advantages-list {
@@ -170,10 +165,9 @@ margin: 0 auto;
 
 .advantages-item-wide {
   display: flex;
-  padding: 0;
   width: 100%;
+  align-items: center;
 }
-
 
 .advantages-title {
   font-size: 24px;
@@ -266,9 +260,10 @@ margin: 0 auto;
   background-color: #ffffff;
 }
 
-.search-wrapper {
+.search {
   width: 592px;
-  margin: 96px 304px;
+  padding: 96px 304px;
+  text-align: center;
 }
 
 .search-title {
@@ -278,6 +273,8 @@ margin: 0 auto;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .search-description {
@@ -286,7 +283,7 @@ margin: 0 auto;
   font-weight: 400;
   text-align: center;
   color: #333333;
-  margin-bottom: 54px;
+  margin: 0 auto 54px;
 }
 
 .search-button {
@@ -302,12 +299,12 @@ margin: 0 auto;
   width: 376px;
   height: 52px;
   padding: 8px 50px;
-  margin: 54px 108px 96px;
 }
 
-.subscribe-wrapper {
+.subscribe {
   width: 684px;
-  margin: 96px 258px 104px;
+  padding: 96px 258px 104px;
+  text-align: center;
 }
 
 .subscribe-background {
@@ -325,7 +322,7 @@ margin: 0 auto;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 96px;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -335,12 +332,12 @@ margin: 0 auto;
   font-weight: 400;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 54px;
+  margin: 0 auto 55px;
 }
 
 .subscribe-form {
-  border: none;
   display: flex;
+  width: 100%;
 }
 
 .subscribe-button {
@@ -357,10 +354,13 @@ margin: 0 auto;
   width: 232px;
   height: 52px;
   border: none;
-  margin-bottom: 104px;
+  gap: 10px;
 }
 
 .field {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px 0 0 4px;
   width: 452px;
   height: 52px;
 }
@@ -369,17 +369,13 @@ margin: 0 auto;
   color: #000000;
   background-color: #ffffff;
   display: flex;
-  margin: 0 auto;
-  width: 1200px;
   justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  padding: 40px 70px 30px;
 }
 
 .footer-social {
   width: 150px;
   margin-right: 236px;
-  padding-left: 70px;
 }
 
 .footer-phone {
@@ -395,7 +391,6 @@ margin: 0 auto;
 .copyright {
   margin-left: auto;
   width: 115px;
-  padding-right: 70px;
 }
 
 /*Стилизация Каталога*/
@@ -404,6 +399,11 @@ margin: 0 auto;
   background-image: url("../images/background/filter-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 35px 70px;
+}
+
+.inner-header {
+  padding-bottom: 40px;
 }
 
 .inner-header-title {
@@ -413,9 +413,7 @@ margin: 0 auto;
   text-transform: capitalize;
   color: #ffffff;
   text-align: left;
-  padding-top: 35px;
-  padding-left: 70px;
-  padding-right: 636px;
+  margin-top: 0;
   margin-bottom: 8px
 }
 
@@ -424,7 +422,12 @@ margin: 0 auto;
   display: flex;
   width: 114px;
   justify-content: space-between;
-  padding-left: 70px;
+}
+
+ul.breadcrumbs {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -433,25 +436,31 @@ margin: 0 auto;
 
 .catalog-filter {
   display: flex;
+  align-items: flex-start;
 }
 
 .container-infrastructure{
+  padding: 0;
   width: 150px;
+  margin: 0;
   margin-right: 70px;
-  margin-left: 70px;
-  margin-bottom: 73px;
+  border: none;
 }
 
 .container-type {
+  padding: 0;
   width: 150px;
+  margin: 0;
   margin-right: 140px;
-  margin-bottom: 73px;
+  border: none;
 }
 
 .container-price {
+  padding: 0;
   width: 288px;
+  margin: 0;
   margin-right: 70px;
-  margin-bottom: 70px;
+  border: none;
 }
 
 .catalog-filter-title {
@@ -460,6 +469,11 @@ margin: 0 auto;
   font-weight: 700;
   color: #ffffff;
   text-transform: capitalize;
+}
+
+ul.catalog-filter-list {
+  margin: 0;
+  padding-left: 0;
 }
 
 .catalog-filter-item {
@@ -480,8 +494,7 @@ margin: 0 auto;
 
 .button-container {
   width: 191px;
-  margin-right: 70px;
-  margin-bottom: 70px;
+  margin-right: auto;
 }
 
 .button-show {
@@ -517,8 +530,11 @@ margin: 0 auto;
 
 .catalog-container {
   display: flex;
-  margin: 0;
-  margin-top: 50px;
+  padding: 50px 0 40px;
+}
+
+.catalog-products {
+  padding: 0 70px;
 }
 
 .catalog-products-title {
@@ -529,8 +545,7 @@ margin: 0 auto;
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  width: 450px;
-  margin-left: 70px;
+  width: 600px;
   margin-right: 200px;
 }
 
@@ -551,11 +566,13 @@ margin: 0 auto;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  gap: 20px;
+  list-style-type: none;
 }
 
 .product-card {
   background-color: #ffffff;
+  width: 340px;
 }
 
 .product-card-link {
