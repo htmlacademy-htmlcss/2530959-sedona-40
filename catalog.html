@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <div class="wrapper-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -36,8 +37,10 @@
               <span class="notification-badge">12</span>
             </a>
           </li>
-        </ul>
+          <li class="navigation-user-item">
             <a class="navigation-user-link button-navigation" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-inner">
@@ -56,9 +59,9 @@
         </ul>
       </header>
       <section class="catalog-hotels">
-        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+        <h2 class="visually-hidden"hidden>Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group container-infrastructure">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -81,7 +84,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group container-type">
             <legend class="catalog-filter-title">Тип жилья</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -104,7 +107,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group container-price">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <label class="filter-range-control">От <input type="text" name="min-interval" value="0"></label>
             <label class="filter-range-control">До <input type="text" name="max-interval" value="9000"></label>
@@ -115,12 +118,15 @@
               <span class="visually-hidden">Управление верхней границей стоимости</span>
             </button>
           </fieldset>
+          <div class="button-container">
           <button class="button button-show" type="submit">Показать</button>
           <button class="button button-reset" type="reset">Сбросить</button>
+        </div>
         </form>
       </section>
     </div>
       <section class="catalog-products">
+        <div class="catalog-container">
         <h2 class="catalog-products-title">Найдено гостиниц:
           <span>38</span>
         </h2>
@@ -138,6 +144,7 @@
         <a class="button button-list" href="catalog.html?view=list">
           <span class="visually-hidden">Показать списком</span>
         </a>
+      </div>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -210,19 +217,21 @@
         </ul>
       </section>
       <section class="subscribe">
-        <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <div class="subscribe-wrapper">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="newsletter-email">email</label>
+          <label class="visually-hidden" for="newsletter-email"hidden>email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
+      </div>
       </section>
     </main>
     <footer class="page-footer">
       <section class="footer-social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <h2 class="visually-hidden"hidden>Мы в социальных сетях</h2>
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="#">
@@ -242,13 +251,14 @@
       </ul>
     </section>
     <section class="footer-contact">
-      <h2 class="visually-hidden">Номер телефона</h2>
+      <h2 class="visually-hidden"hidden>Номер телефона</h2>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </section>
       <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
         <img class="logo-geveloper" src="images/content/logo-htmlacademy.svg" width="115" height="34" alt="Логотип разработчика сайта">
       </a>
     </footer>
+  </div>
   </body>
 
 </html>
