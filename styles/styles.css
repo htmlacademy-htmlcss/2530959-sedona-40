@@ -27,6 +27,17 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .wrapper-container {
   width: 1200px;
   margin: 0 auto;
@@ -51,17 +62,23 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 440px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 300px;
   margin: 0;
   padding: 0;
   margin-left: auto;
-  }
+  list-style-type: none;
+}
 
 .navigation-link {
   font-size: 20px;
@@ -72,6 +89,8 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
+  padding: 20px 16px;
+  display: block;
 }
 
 .navigation-user-link {
@@ -83,6 +102,10 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  padding: 22px 12px;
+  min-width: 22px;
+  min-height: 12px;
 }
 
 .notification-badge {
@@ -96,12 +119,11 @@ body {
 
 .button-navigation {
   border-radius: 4px;
-  padding: 8px 50px;
-  width: 160px;
-  height: 36px;
   color: #ffffff;
   background-color: #756157;
   text-decoration-line: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .main-container {
@@ -126,6 +148,11 @@ body {
   padding: 51px 371px 82px;
 }
 
+.advantages-wrapper {
+  width: 660px;
+  padding: 70px 270px;
+}
+
 .advantages-tagline {
   font-size: 30px;
   line-height: 36px;
@@ -134,11 +161,8 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-transform: uppercase;
-}
-
-.advantages-wrapper {
-  width: 660px;
-  padding: 70px 270px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .advantages-text {
@@ -147,6 +171,7 @@ body {
   font-weight: 400;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .advantages-list {
@@ -169,6 +194,10 @@ body {
   align-items: center;
 }
 
+.advantages-item-wrapper {
+  padding: 102px 85px;
+}
+
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
@@ -176,6 +205,8 @@ body {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 62px;
 }
 
 .advantages-description {
@@ -184,6 +215,7 @@ body {
   font-weight: 400;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .advantages-item:nth-child(odd) {
@@ -199,6 +231,10 @@ body {
   color: #ffffff;
 }
 
+.advantages-item-middle {
+  padding: 112px 85px;
+}
+
 .infrastructure-wrapper {
   width: 505px;
   padding: 64px 348px;
@@ -212,6 +248,8 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .infrastructure-text {
@@ -221,6 +259,7 @@ body {
   text-align: center;
   color: #333333;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .infrastructure-list {
@@ -236,7 +275,7 @@ body {
   width: 400px;
   height: 385px;
   box-sizing: border-box;
-  padding: 81px 85px
+  padding: 81px 85px;
 }
 
 .infrastructure-title {
@@ -245,7 +284,9 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
-  text-transform: uppercase
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .infrastructure-description {
@@ -254,6 +295,7 @@ body {
   font-weight: 400;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .infrastructure-item:nth-child(even) {
@@ -378,6 +420,19 @@ body {
   margin-right: 236px;
 }
 
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-item {
+  width: 48px;
+  height: 40px;
+}
+
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
@@ -420,8 +475,10 @@ body {
 .breadcrumbs {
   color: #ffffff;
   display: flex;
+  margin: 0;
+  padding: 0;
   width: 114px;
-  justify-content: space-between;
+  list-style-type: none;
 }
 
 ul.breadcrumbs {
@@ -432,6 +489,7 @@ ul.breadcrumbs {
 
 .breadcrumbs-link {
   color: inherit;
+  margin-right: 29px;
 }
 
 .catalog-filter {
@@ -704,6 +762,8 @@ ul.catalog-filter-list {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe p {
@@ -712,4 +772,6 @@ ul.catalog-filter-list {
   font-weight: 400;
   text-align: center;
   color: #333333;
+  margin-top: 0;
+  margin-bottom: 54px;
 }
