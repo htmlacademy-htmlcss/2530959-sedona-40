@@ -110,6 +110,18 @@ body {
   min-height: 20px;
 }
 
+.navigation-user .navigation-user-item:nth-child(1) .navigation-user-link {
+  background-image: url("../images/decorative/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-user-item:nth-child(2) .navigation-user-link {
+  background-image: url("../images/decorative/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .notification-badge {
   font-size: 10px;
   line-height: 10px;
@@ -117,6 +129,13 @@ body {
   text-align: center;
   background-color: #7db54f;
   color: #ffffff;
+  width: 20px;
+  height: 20px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+  left: 10px;
 }
 
 .button-navigation {
@@ -125,6 +144,7 @@ body {
   background-color: #756157;
   text-decoration-line: none;
   padding: 8px 34px;
+  margin-left: 20px;
 }
 
 .main-container {
@@ -197,6 +217,11 @@ body {
 
 .advantages-item-wrapper {
   padding: 102px 85px;
+}
+
+.advantages-img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .advantages-title {
@@ -276,7 +301,24 @@ body {
   width: 400px;
   height: 385px;
   box-sizing: border-box;
-  padding: 81px 85px;
+  padding: 183px 85px 81px;
+}
+
+.home-icon {
+  background-image: url(../images/decorative/Infrastructure-icon-1.svg);
+  background-repeat: no-repeat;
+}
+
+.food-icon {
+  background-image: url(../images/decorative/Infrastructure-icon-2.svg);
+  background-repeat: no-repeat;
+}
+}
+
+.gifts-icon {
+  background-image: url(../images/decorative/Infrastructure-icon-3.svg);
+  background-repeat: no-repeat;
+}
 }
 
 .infrastructure-title {
@@ -288,6 +330,7 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+
 }
 
 .infrastructure-description {
@@ -433,6 +476,15 @@ body {
 .social-item {
   width: 48px;
   height: 40px;
+}
+
+.social-link {
+  position: relative;
+}
+
+.social-icon {
+  position: absolute;
+  margin: 12px 13px;
 }
 
 .footer-phone {
@@ -610,7 +662,7 @@ ul.catalog-filter-list {
   font-weight: 400;
   color: #333333;
   width: 292px;
-  height: 49px;
+  min-height: 49px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   padding-left: 20px;
@@ -629,6 +681,16 @@ ul.catalog-filter-list {
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
+  position: relative;
+}
+
+.sorting-view {
+  position: absolute;
+  padding: 17px 16px;
+}
+
+.button-cards-current {
+  border: 2px solid #000000;
 }
 
 .product-list {
@@ -706,10 +768,10 @@ ul.catalog-filter-list {
   text-decoration: none;
   border-radius: 4px;
   padding: 8px 26px;
-  /*width: 140px;
-  height: 36px;*/
+  width: 140px;
+  height: 36px;
   grid-column: 1/2;
-  justify-self: auto;
+  box-sizing: border-box;
 }
 
 .product-card-favorit-button {
@@ -724,10 +786,10 @@ ul.catalog-filter-list {
   text-decoration: none;
   border-radius: 4px;
   padding: 8px 20px;
- /* width: 140px;
-  height: 36px;*/
+  width: 140px;
+  height: 36px;
   grid-column: 2/3;
-  justify-self: auto;
+  box-sizing: border-box;
 }
 
 .product-card-favorit-button-add {
@@ -742,10 +804,10 @@ ul.catalog-filter-list {
   text-decoration: none;
   border-radius: 4px;
   padding: 8px 18px;
-  /*width: 140px;
-  height: 36px;*/
+  width: 140px;
+  height: 36px;
   grid-column: 2/3;
-  justify-self: auto;
+  box-sizing: border-box;
 }
 
 .product-card-rating {
@@ -761,14 +823,43 @@ ul.catalog-filter-list {
   border-radius: 4px;
   margin: 0;
   padding: 9px 22px 8px 23px;
-  /*width: 140px;
-  height: 37px;*/
+  width: 140px;
+  height: 37px;
   grid-column: 2/3;
-  justify-self: auto;
+  box-sizing: border-box;
 }
 
 .product-card-stars {
+  margin: 0;
+  background-position: left;
+  background-size: 18px 17px;
   grid-column: 1/2;
+  width: 140px;
+  height: 37px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.product-card-4stars {
+  background-image: url(../images/decorative/star.svg);
+  background-size: 18px 17px;
+  background-repeat: repeat;
+  width: 90px;
+  height: 17px;
+  padding-right: 6px;
+}
+
+.product-card-3stars {
+  background-repeat: repeat;
+  width: 66px;
+  height: 17px;
+}
+
+.product-card-2stars {
+  background-repeat: repeat;
+  width: 42px;
+  height: 17px;
 }
 
 .pagination-list {
@@ -806,12 +897,13 @@ ul.catalog-filter-list {
   text-decoration: none;
 }
 
-.pagination-item:nth-child(5) {
-  padding-left: 21px;
-  padding-right: 21px;
+.pagination-link-point {
+  color: #000000;
+  background-color: transparent;
+
 }
 
-.subscribe .subscribe-title {
+.subscribe h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -822,7 +914,7 @@ ul.catalog-filter-list {
   margin-bottom: 20px;
 }
 
-.subscribe .subscribe-description {
+.subscribe p {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
