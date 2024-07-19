@@ -231,7 +231,7 @@ body {
 .hero {
   background-color: #a0c0d6;
   background-image: url("../images/decorative/frame-background.svg"), url("../images/background/index-background.jpg");
-  background-size: 100% auto, 100% auto;
+  background-size: 100% auto, cover;
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 51px 0 82px;
@@ -386,7 +386,7 @@ body {
 
 .infrastructure-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -505,7 +505,7 @@ body {
 
 .subscribe {
   width: 684px;
-  padding: 95px 258px 104px;
+  padding: 97px 258px 105px;
   text-align: center;
 }
 
@@ -515,6 +515,7 @@ body {
   background-image: url("../images/background/subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 95px 258px 104px;
 }
 
 .subscribe-background .subscribe-title {
@@ -637,6 +638,8 @@ body {
 }
 
 .footer-phone {
+  display: block;
+  width: 335px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -756,6 +759,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .date-input {
@@ -783,10 +787,6 @@ body {
   background-color: #e6e6e6;
 }
 
-.date-input-check-in {
-  margin-left: 24px;
-  display: flex;
-}
 
 .text-message {
   font-family: inherit;
@@ -801,11 +801,6 @@ body {
 
 .text-message-error {
   color: #ff5757
-}
-
-.date-input-check-out {
-  margin-left: 18px;
-  display: flex;
 }
 
 .people-container {
@@ -988,7 +983,7 @@ input[type='number'] {
   background-image: url("../images/background/filter-background-hotels.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 70px;
+  padding: 35px 70px 70px;
 }
 
 .inner-header {
@@ -1025,7 +1020,7 @@ input[type='number'] {
 
 .breadcrumbs-item::after {
   content: "";
-  background-image: url(../images/decorative/arrow-right.svg);
+  background-image: url("../images/decorative/arrow-right.svg");
   background-repeat: no-repeat;
   width: 7px;
   height: 10px;
@@ -1173,7 +1168,7 @@ ul.catalog-filter-list {
   display: flex;
   justify-content: center;
   gap: 2px;
-  margin-bottom: 36px;
+  margin-bottom: 45px;
 }
 
 .filter-range-control {
@@ -1261,13 +1256,13 @@ ul.catalog-filter-list {
 }
 
 .toggle-min {
-  top: -9px;
+  top: -8px;
   left: 0;
 }
 
 .toggle-max {
-  top: -9px;
-  right: 0;
+  top: -8px;
+  right: -2px;
 }
 
 .button-container {
@@ -1287,7 +1282,7 @@ ul.catalog-filter-list {
   border: none;
   border-radius: 4px;
   width: 191px;
-  height: 36px;
+  min-height: 36px;
   padding: 8px 50px;
   margin-top: 56px;
   margin-bottom: 32px;
@@ -1322,7 +1317,7 @@ ul.catalog-filter-list {
   border: none;
   border-radius: 4px;
   width: 191px;
-  height: 36px;
+  min-height: 36px;
   padding: 8px 50px;
 }
 
@@ -1349,7 +1344,7 @@ ul.catalog-filter-list {
 
 .catalog-container {
   display: flex;
-  padding-top: 50px;
+  padding-top: 49px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
@@ -1370,8 +1365,9 @@ ul.catalog-filter-list {
   position: relative;
   display: flex;
   align-items: center;
-  width: 290px;
-  margin-right: auto;
+  width: 297px;
+  height: 50px;
+  margin-left: 68px;
 }
 
 .select-control {
@@ -1513,7 +1509,7 @@ ul.catalog-filter-list {
   border-radius: 4px;
   padding: 8px 26px;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   grid-column: 1/2;
   box-sizing: border-box;
 }
@@ -1548,7 +1544,7 @@ ul.catalog-filter-list {
   border-radius: 4px;
   padding: 8px 20px;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   grid-column: 2/3;
   box-sizing: border-box;
 }
@@ -1583,7 +1579,7 @@ ul.catalog-filter-list {
   border-radius: 4px;
   padding: 8px 18px;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   grid-column: 2/3;
   box-sizing: border-box;
 }
@@ -1619,7 +1615,7 @@ ul.catalog-filter-list {
   margin: 0;
   padding: 9px 22px 8px 23px;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   grid-column: 2/3;
   box-sizing: border-box;
 }
