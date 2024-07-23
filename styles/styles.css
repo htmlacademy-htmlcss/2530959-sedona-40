@@ -892,7 +892,7 @@ body {
   margin: 0;
 }
 
-input[type="number"] {
+.number-people-input[type="number"] {
   appearance: textfield;
 }
 
@@ -1259,6 +1259,10 @@ input[type="number"] {
   margin: 0;
 }
 
+.range-input[type="number"] {
+  appearance: textfield;
+}
+
 .range-scale {
   position: relative;
   height: 4px;
@@ -1296,12 +1300,12 @@ input[type="number"] {
 }
 
 .toggle-min {
-  top: -8px;
+  top: -9px;
   left: 0;
 }
 
 .toggle-max {
-  top: -8px;
+  top: -9px;
   right: -2px;
 }
 
@@ -1376,7 +1380,7 @@ input[type="number"] {
 }
 
 .button-reset:disabled {
-  background-color: #e5e5e5;
+  opacity: 10%;
 }
 
 .catalog-products {
@@ -1417,12 +1421,13 @@ input[type="number"] {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  width: 100%;
+  width: 295px;
   min-height: 49px;
-  padding: 14px 20px;
+  padding: 13px 20px;
   padding-right: 94px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
   background-image: url("../images/decorative/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
