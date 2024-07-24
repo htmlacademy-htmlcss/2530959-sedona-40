@@ -486,6 +486,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   border: none;
+  cursor: pointer;
 }
 
 .search-button:hover {
@@ -562,6 +563,7 @@ body {
   min-height: 52px;
   border: none;
   overflow-wrap: break-word;
+  cursor: pointer;
 }
 
 .subscribe-button:hover {
@@ -733,6 +735,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .modal-close-button:hover {
@@ -858,6 +861,7 @@ body {
   border-radius: 4px;
   background-color: #f2f2f2;
   color: rgba(117, 97, 87, 0.3);
+  cursor: pointer;
 }
 
 .number-button:hover {
@@ -919,6 +923,7 @@ body {
   padding: 0;
   margin: 0;
   display: block;
+  cursor: pointer;
 }
 
 .tooltip-icon {
@@ -984,6 +989,7 @@ body {
   border-radius: 10px;
   background-color: #83b3d3;
   padding: 0;
+  cursor: pointer;
 }
 
 .button-modal-search:hover {
@@ -1282,6 +1288,7 @@ body {
   border-radius: 5px;
   background-color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 .range-toggle:hover {
@@ -1330,6 +1337,7 @@ body {
   padding: 8px 50px;
   margin-top: 56px;
   margin-bottom: 32px;
+  cursor: pointer;
 }
 
 .button-show:hover {
@@ -1364,6 +1372,7 @@ body {
   width: 191px;
   min-height: 36px;
   padding: 8px 50px;
+  cursor: pointer;
 }
 
 .button-reset:hover {
@@ -1609,6 +1618,7 @@ body {
   grid-column: 2/3;
   box-sizing: border-box;
   border: none;
+  cursor: pointer;
 }
 
 .product-card-favorit-button:hover {
@@ -1647,6 +1657,7 @@ body {
   grid-column: 2/3;
   box-sizing: border-box;
   border: none;
+  cursor: pointer;
 }
 
 .product-card-favorit-button-add:hover {
